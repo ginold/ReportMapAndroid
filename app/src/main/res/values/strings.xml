@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">ReportMap</string>
+    <string name="title_activity_maps">Map</string>
+    <string name="map">Map</string>
+    <string name="report">Report</string>
+    <string name="gallery">Gallery</string>
+
+    <string-array name="object_types">
+        <item>Hole</item>
+        <item>Broken Lantern</item>
+        <item>Homless guy</item>
+        <item>Dead cat</item>
+    </string-array>
+
+    <string name="title_activity_camera">CameraActivity</string>
+    <string name="dummy_button">Dummy Button</string>
+    <string name="dummy_content">DUMMY\nCONTENT</string>
+</resources>
