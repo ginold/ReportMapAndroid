@@ -31,10 +31,15 @@
                     android:gravity="center_vertical|end"
                     android:orientation="horizontal">
 
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="TEXT" />
+                    <ImageButton
+                        android:id="@+id/logoutButtonNav"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="20dp"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_arrow_back_black_24dp" />
 
                     <ImageButton
                         android:layout_width="25dp"
@@ -42,7 +47,7 @@
                         android:layout_centerHorizontal="true"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="20dp"
-                        android:src="@drawable/ic_camera_alt_white_24dp" />
+                        android:src="@drawable/ic_camera_alt_white_24dp"/>
                 </LinearLayout>
             </android.support.v7.widget.Toolbar>
 

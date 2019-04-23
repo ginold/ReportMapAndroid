@@ -1,13 +1,16 @@
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/products_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.ginold.reportmap.fragments.GalleryFragment">
+    tools:context="com.example.ginold.reportmap.MainActivity">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/issue_list_recycler_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="krprkojiro" />
-
-</FrameLayout>
+        android:layout_height="wrap_content"
+        android:paddingBottom="70sp"
+        android:scrollbars="vertical" />
+</android.support.constraint.ConstraintLayout>

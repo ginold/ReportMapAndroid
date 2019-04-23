@@ -1,0 +1,100 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    tools:context="com.example.ginold.reportmap.fragments.IssueDetailsFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="0dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            android:paddingBottom="0dp"
+            android:paddingTop="0dp">
+
+            <ProgressBar
+                android:id="@+id/progressDetail"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_weight="1"
+                android:visibility="visible" />
+
+            <ImageView
+                android:id="@+id/issuePicture"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:scaleType="fitCenter"
+                android:src="@drawable/common_google_signin_btn_icon_dark"
+                android:visibility="gone" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/issueTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Issue Title"
+                android:textColor="?attr/editTextColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/issueTitleText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="?attr/editTextColor" />
+
+            <TextView
+                android:id="@+id/issueDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_weight="1"
+                android:text="Description"
+                android:textColor="?attr/editTextColor"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/issueDescriptionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="TextView"
+                android:textColor="?attr/editTextColor" />
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/mapViewDetails"
+                android:layout_width="match_parent"
+                android:layout_height="141dp"
+                android:layout_marginTop="16dp" />
+
+            <Button
+                android:id="@+id/submitBtn"
+                style="@style/Widget.AppCompat.Button.Colored"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Mark as solved" />
+        </LinearLayout>
+
+    </LinearLayout>
+</FrameLayout>

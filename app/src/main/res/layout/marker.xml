@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:id="@+id/marker"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:background="@color/colorPrimary">
+    android:background="@drawable/rounded_corners">
 
     <ImageView
         android:id="@+id/marker_image"
@@ -11,5 +11,6 @@
         android:layout_height="48dp"
         android:layout_gravity="center_horizontal"
         android:contentDescription="@null"
-        android:src="@drawable/ic_camera_alt_white_24dp" />
-</FrameLayout>
+        android:padding="5dp"
+        android:src="@drawable/googleg_standard_color_18" />
+</LinearLayout>
